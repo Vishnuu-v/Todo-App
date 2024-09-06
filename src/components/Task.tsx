@@ -13,7 +13,7 @@ interface TaskProps {
 }
 
 const Task: React.FC<TaskProps> = ({ id, description, completed }) => {
-  const toggleCompletion = useTaskStore((state) => state.toogleTaskCompletion);
+  const toggleCompletion = useTaskStore((state) => state.toggleTaskCompletion);
   const deleteTask = useTaskStore((state) => state.deleteTask);
 
   const [isEditing, setIsEditing] = useState(false);
